@@ -7,7 +7,7 @@ managed:
       value: example.com/foo/gen/go
 
 plugins:
-  - local: ["go", "run", "google.golang.org/protobuf/cmd/protoc-gen-go"]
+  - local: ["go", "run", "./cmd/protoc-gen-custom"]
     out: gen/go
     opt: paths=source_relative
     include_imports: true
