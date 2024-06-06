@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package keyvalue.v1;
+
+option go_package = "keyvalue/v1";
+
+import "common/v1/value.proto";
+
+message SetRequest {
+    string key = 1;
+    common.v1.Value value = 2;
+}
